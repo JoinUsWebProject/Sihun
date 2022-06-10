@@ -1,30 +1,31 @@
-.info_right {
-  float: right;
-  width: 28%;
-  margin: 1%;
+* {
+  color: white;
 }
 
 .info_left {
-  float: left;
-  width: 68%;
-  margin: 1%;
-  padding-left: 20%;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.main_left {
-  float: left;
-  width: 48%;
-  margin: 1%;
+.info_sub {
+  text-align: center;
+  margin: 5%;
+}
+
+.info_theme {
   text-align: center;
 }
 
-.main_right {
-  float: right;
-  width: 48%;
-  margin: 1%;
+.other_theme {
+  margin-bottom: 40px;
 }
 
-.info_img {
-  width: 300px;
-  height: 400px;
+.theme_add {
+  text-align: left;
+  background-color: gray;
+}
+
+.bg_col {
+  background-color: black;
+  padding: 30px;
 }

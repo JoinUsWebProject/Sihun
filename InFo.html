@@ -2,24 +2,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="./css/theme.css" rel="stylesheet" />
     <link href="./css/nav.css" rel="stylesheet" />
-    <link href="./css/footer.css" rel="stylesheet" />
     <link href="./css/info_data.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
 
     <title>JoinUs</title>
   </head>
 
 
-  <body class="theme detail">
+  <body>
 
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -33,8 +29,11 @@
       </div>
     </nav>
 
-    <div class="container-fluid main_info">
-      <div class="main_left">
+    <div class="bg_col">
+
+    <div class="container-fluid row">
+      <div class="container col-md-6 info_left">
+        <div>
         <div>
           <p><span>JoinUs Escape</span></p>
         </div>
@@ -46,7 +45,7 @@
         <div>
           <p>
             <span>
-              <img src="2.5star.png" alt="1" />
+              <img src="./img/2.5star.png"/>
             </span>
             <span>2.7</span>
           </p>
@@ -70,9 +69,9 @@
           <p>
             <span>활동성</span>
             <span>
-              <img src="https://www.roomescape.co.kr/_template/assets/img/theme/detail/def_info/many_off.png" alt="" />
-              <img src="https://www.roomescape.co.kr/_template/assets/img/theme/detail/def_info/normal_off.png" alt="" />
-              <img src="https://www.roomescape.co.kr/_template/assets/img/theme/detail/def_info/low_on.png" alt="" />
+              <img src="./img/many_off.png"/>
+              <img src="./img/normal_off.png"/>
+              <img src="./img/low_on.png"/>
             </span>
           </p>
         </div>
@@ -81,38 +80,50 @@
           <p>
             <span class="tag">추천인원</span>
             <span>
-              <img src="https://www.roomescape.co.kr/_template/assets/img/theme/detail/def_info/2_user.jpg" alt="" />
-              <img src="https://www.roomescape.co.kr/_template/assets/img/theme/detail/def_info/3_user.jpg" alt="" />
+              <img src="./img/2_user.jpg"/>
+              <img src="./img/3_user.jpg"/>
             </span>
           </p>
         </div>
 
         <div>
-          <button type="button" id="no_alliance_reserve">예약하기</button>
+          <button type="button" id="no_alliance_reserve" style="color:black;">예약하기</button>
           <span class="pipe">|</span>
           <a href="#">위치 정보</a>
         </div>
-
-        <div class="def_info_pic" style="background-image:url('temp.jpg')"></div>
+      </div>
       </div>
 
-
-      <div class="main_right">
-        <img src="temp.jpg" class = "info_img">
-      </div>
+      <img src="./img/temp.jpg" class = "info_img col-md-5">
     </div>
 
-    <div class="container-fluid info_left">
+    <div class="container-fluid info_sub">
       <div>
         <h2>소개</h2>
         <p>
-          <span>운영체제~ 웹프~ 전프~ 컴파일러~<br>
-          응 과제 계속해봐~ C맞으면 그만이야~</span>
+          <span>뭔가 엄청 재미있는 방탈출이 많습니다.<br>
+          진짜 개쩔구요<br>
+          Lorem Ipsum<br>
+          Lorem Ipsum<br>
+          Lorem Ipsum<br>
+          Lorem Ipsum<br>
+          Lorem Ipsum<br>
+          Lorem Ipsum<br>
+          Lorem Ipsum<br>
+          Lorem Ipsum<br>
+          Lorem Ipsum<br>
+          Lorem Ipsum<br>
+          Lorem Ipsum<br>
+          Lorem Ipsum<br>
+          Lorem Ipsum<br>
+        </span>
         </p>
       </div>
-      <div>
+    </div>
+    <div class="container-fluid row">
+      <div class="col-md-6 col-md-offset-3">
         <h2>위치</h2>
-        <div id="map" style="width:500px;height:500px"></div>
+        <div id="map" style="height:500px;"></div>
         <script>
         function myMap() {
           var mapCanvas = document.getElementById("map");
@@ -128,96 +139,94 @@
       </div>
     </div>
 
-    <div class="container-fluid info_right">
-      <h2>이 업체의 다른 테마</h2>
+  </div>
 
-      <div class="other_theme">
-        <div style="background-image:url('temp.jpg');"></div>
-        <div>
-          <p>
-            <span class="text">운영체제</a></span>
-          </p>
-          <p>
-            <span>방탈출</span>
-            <span clss="pipe">|</span>
-            <span class="tag">평점</span>
-            <span class="img">
-              <img src="2.5star.png" alt="1" />
-            </span>
-            <span>2.7</span>
-          </p>
-        </div>
-      </div>
+    <div class="container-fluid info_theme bg_col">
+      <h2>이 업체의 테마</h2>
 
-      <div class="other_theme">
-        <div style="background-image:url('temp.jpg');"></div>
-        <div>
-          <p>
-            <span class="text">컴파일러</a></span>
-          </p>
-          <p>
-            <span>방탈출</span>
-            <span clss="pipe">|</span>
-            <span class="tag">평점</span>
-            <span class="img">
-              <img src="2.5star.png" alt="1" />
-            </span>
-            <span>2.7</span>
-          </p>
+      <div class="other_theme row">
+        <div class="col-md-6 col-md-offset-3 row">
+            <img src="./img/sample.jpg" class = "info_img">
+            <div>
+              <p>
+                <span class="text">운영체제</a></span>
+                <span clss="pipe">|</span>
+                <span>방탈출</span>
+                <span clss="pipe">|</span>
+                <span class="tag">평점</span>
+                <span class="img">
+                  <img src="./img/2.5star.png" alt="1" />
+                </span>
+                <span>2.7</span>
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="other_theme">
-        <div style="background-image:url('temp.jpg');"></div>
-        <div>
-          <p>
-            <span class="text">사기도박</a></span>
-          </p>
-          <p>
-            <span>방탈출</span>
-            <span clss="pipe">|</span>
-            <span class="tag">평점</span>
-            <span class="img">
-              <img src="2.5star.png" alt="1" />
-            </span>
-            <span>2.7</span>
-          </p>
-        </div>
-      </div>
+
+
+        <div class="other_theme row">
+          <div class="col-md-6 col-md-offset-3 row">
+              <img src="./img/sample.jpg" class = "info_img">
+              <div>
+                <p>
+                  <span class="text">컴파일러</a></span>
+                  <span clss="pipe">|</span>
+                  <span>방탈출</span>
+                  <span clss="pipe">|</span>
+                  <span class="tag">평점</span>
+                  <span class="img">
+                    <img src="./img/2.5star.png" alt="1" />
+                  </span>
+                  <span>2.7</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="other_theme row">
+            <div class="col-md-6 col-md-offset-3 row">
+                <img src="./img/sample.jpg" class = "info_img">
+                <div>
+                  <p>
+                    <span class="text">객체지향설계</a></span>
+                    <span clss="pipe">|</span>
+                    <span>당구장</span>
+                    <span clss="pipe">|</span>
+                    <span class="tag">평점</span>
+                    <span class="img">
+                      <img src="./img/2.5star.png" alt="1" />
+                    </span>
+                    <span>2.2</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="theme_add row">
+              <div class="col-md-6 col-md-offset-3">
+                <h2>Add Theme</h2>
+                  <form class="row">
+                    <div class="form-group col-sm-4">
+                      <label for="th_name">name: </label>
+                      <input type="text" class="form-control" id="th_name">
+                    </div>
+                    <div class="form-group col-sm-4">
+                      <label for="th_type">type: </label>
+                      <input type="text" class="form-control" id="th_type">
+                    </div>
+                    <div class="form-group col-sm-4">
+                      <label for="th_img">upload img file</label>
+                      <input type="file" class="form-control" id="th_img" accept="image/*">
+                    </div>
+                    <div class="form-group col-sm-2 col-sm-offset-10">
+                      <button type="submit" class="btn btn-primary" id="add_submit">테마 추가</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
 
     </div>
-
-
-    <footer class="footer">
-      <div class="footer_wrap">
-          <div>
-            <p><span>JoinUs</span></p>
-          </div>
-
-          <div>
-            <p>
-              <span class="tag">팀장 이상윤</span>
-              <span>&nbsp;|&nbsp;</span>
-              <span class="tag">팀원 이정주</span>
-              <span>&nbsp;|&nbsp;</span>
-              <span class="tag">팀원 이시헌</span>
-            </p>
-          </div>
-
-          <div>
-            <p>
-              <span class="tag">메일</span>
-              <span class="colon">&nbsp;:&nbsp;</span>
-              <span class="value">joinus@naver.com</span>
-            </p>
-
-            <p class="loc">
-              <span class="tag">주소</span>
-              <span class="colon">&nbsp;:&nbsp;</span>
-              <span class="value">충북대학교 전자정보대학 S4-1 102호</span>
-            </p>
-          </div>
-      </div>
-    </footer>
   </body>
 </html>
