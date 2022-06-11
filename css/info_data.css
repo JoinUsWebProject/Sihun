@@ -2,15 +2,9 @@
   color: black;
 }
 
-.info_left {
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .info_sub {
   text-align: center;
-  margin: 5%;
+  background-color: #F9F9F9;
 }
 
 .info_theme {
@@ -30,4 +24,11 @@
 .bg_col {
   background-color: white;
   padding: 30px;
+}
+
+.info_text {
+  background-color: #CDF0EA;
+  height: 300px;
+  display: flex;
+  align-items: center;
 }
