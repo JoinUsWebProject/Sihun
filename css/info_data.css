@@ -4,7 +4,6 @@
 
 .info_sub {
   text-align: center;
-  background-color: #F9F9F9;
 }
 
 .info_theme {
@@ -17,7 +16,7 @@
 
 .theme_add {
   text-align: left;
-  background-color: gray;
+  background-color: #F9F9F9;
   display:none;
 }
 
@@ -27,8 +26,13 @@
 }
 
 .info_text {
-  background-color: #CDF0EA;
   height: 300px;
   display: flex;
   align-items: center;
+}
+
+.info_img {
+  background-image: url("./temp.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
