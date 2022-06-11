@@ -4,7 +4,8 @@
 
 .info_left {
   text-align: center;
-  vertical-align: middle;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .info_sub {
@@ -23,6 +24,7 @@
 .theme_add {
   text-align: left;
   background-color: gray;
+  display: none;
 }
 
 .bg_col {
