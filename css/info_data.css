@@ -1,5 +1,5 @@
 * {
-  color: white;
+  color: black;
 }
 
 .info_left {
@@ -28,6 +28,6 @@
 }
 
 .bg_col {
-  background-color: black;
+  background-color: white;
   padding: 30px;
 }
