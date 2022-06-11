@@ -212,11 +212,19 @@
 
 
       <!-- 일단 토글 버튼으로 임시로 해놨음 -->
-      <button type="button" class="btn btn-sm" onclick="mytoggle()" style="color:black;">toggle</button>
+      <div class="">
+        <input type="radio" name="r1" value ="admin" onclick="mytoggle(event)"/>admin
+        <input type="radio" name="r1" value ="user" onclick="mytoggle(event)" checked="checked"/>user
+      </div>
       <script>
       $(document).ready(function() {});
-      function mytoggle() {
-        $(".theme_add").toggle();
+      function mytoggle(event) {
+        if(event.target.value == "admin") {
+          $(".theme_add").css("display", "block");
+        }
+        if(event.target.value == "user") {
+          $(".theme_add").css("display", "none");
+        }
       }
       </script>
 
