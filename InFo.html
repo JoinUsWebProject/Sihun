@@ -22,13 +22,23 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <div class="login">
-            <button type="button" class="btn btn-info">로그인</button>
+            <button type="button" class="btn btn-info" onclick="popup()">로그인</button>
             <button type="button" class="btn btn-info">회원가입</button>
           </div>
           <a class="navbar-brand" style="margin-top: 8px;" href="#">JoinUs</a>
         </div>
       </div>
     </nav>
+    <script>
+      function popup() {
+        var _width = '285';
+        var _height = '400';
+        var _left = Math.ceil(( window.screen.width - _width )/2);
+        var _top = Math.ceil(( window.screen.height - _height )/2); 
+ 
+        window.open('Login.html', 'Log In', 'width='+ _width +', height='+ _height +', left=' + _left + ', top='+ _top );
+      }
+    </script>
 
     <div class="bg_col">
 
@@ -143,11 +153,7 @@
               <div class="col-md-6 col-md-offset-3 row">
                 <img src="./img/sample.jpg" class = "info_img">
                 <div>
-                  <p>
-                    <span class="text">운영체제</a></span>
-                    <span clss="pipe">|</span>
-                    <span>방탈출</span>
-                  </p>
+                  <p><button type="button" class="btn btn-link">운영체제 | 방탈출</button></p>
                 </div>
               </div>
             </div>
@@ -157,11 +163,7 @@
               <div class="col-md-6 col-md-offset-3 row">
                 <img src="./img/sample.jpg" class = "info_img">
                 <div>
-                  <p>
-                    <span class="text">컴파일러</a></span>
-                    <span clss="pipe">|</span>
-                    <span>방탈출</span>
-                  </p>
+                  <p><button type="button" class="btn btn-link">컴파일러 | 방탈출</button></p>
                 </div>
               </div>
             </div>
@@ -171,11 +173,7 @@
               <div class="col-md-6 col-md-offset-3 row">
                 <img src="./img/sample.jpg" class = "info_img">
                 <div>
-                  <p>
-                    <span class="text">객체지향설계</a></span>
-                    <span clss="pipe">|</span>
-                    <span>방탈출</span>
-                  </p>
+                  <p><button type="button" class="btn btn-link">객체지향설계 | 방탈출</button></p>
                 </div>
               </div>
             </div>
